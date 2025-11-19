@@ -48,6 +48,17 @@ window.onload = function() {
     updateNavigationButtons();
 }
 
+// Function to go back to previous page
+function goBack() {
+    // Check if there's a referrer and it's from the same site
+    if (document.referrer && document.referrer.indexOf(window.location.host) !== -1) {
+        window.history.back();
+    } else {
+        // Default to home if no referrer
+        window.location.href = 'home.html';
+    }
+}
+
 // Render activity cards
 function renderActivities() {
     const slider = document.getElementById('activitiesSlider');
@@ -131,8 +142,8 @@ function startActivity(activityId) {
         // Save selected activity
         localStorage.setItem('selectedActivity', JSON.stringify(activity));
         
-        // ไปหน้า session complete
-        window.location.href = 'session-complete.html';
+        // ไปหน้า start-training (หน้าว่างสำหรับใส่ backend)
+        window.location.href = 'start-training.html';
     }
 }
 
