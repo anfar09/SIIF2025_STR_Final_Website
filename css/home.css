@@ -158,3 +158,51 @@
         right: 1rem;
     }
 }
+
+/* ขนาดปกติ */
+.header-buttons .btn {
+    padding: 0.8rem 1.6rem; /* หนาและยาวขึ้น */
+    font-size: 1rem;        /* ตัวอักษรใหญ่ขึ้น */
+    min-width: 120px;       /* ความกว้างขั้นต่ำเพิ่ม */
+}
+
+/* สำหรับแท็บเล็ต */
+@media (max-width: 768px) {
+    .header-buttons .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+
+    #profileMenuBtn {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px; 
+    }
+
+    #profileMenuBtn svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* สำหรับมือถือ */
+@media (max-width: 480px) {
+    .header-buttons .btn {
+        padding: 0.5rem 0.4rem;
+        font-size: 0.7rem;
+        min-width: 50px;
+    }
+
+    #profileMenuBtn {
+        width: 32px;
+        height: 32px;
+        border-radius: 3px; 
+    }
+
+    #profileMenuBtn svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
