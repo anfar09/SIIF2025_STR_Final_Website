@@ -131,7 +131,7 @@ body {
     margin-bottom: 40px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .dough-ball {
         transform: scale(3) rotate(10deg) translateY(-2px);
         margin-bottom: -10px;
@@ -332,3 +332,11 @@ h1 {
         height: 20px;
     }
 }
+
+/* ขนาดปกติ */
+.header-buttons .btn {
+    padding: 0.8rem 1.6rem; /* หนาและยาวขึ้น */
+    font-size: 1rem;        /* ตัวอักษรใหญ่ขึ้น */
+    min-width: 120px;       /* ความกว้างขั้นต่ำเพิ่ม */
+}
+

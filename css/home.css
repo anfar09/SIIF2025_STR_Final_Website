@@ -188,10 +188,17 @@
 
 /* สำหรับมือถือ */
 @media (max-width: 480px) {
+    .header-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem; /* ระยะห่างระหว่างปุ่ม */
+    }
     .header-buttons .btn {
-        padding: 0.5rem 0.4rem;
-        font-size: 0.7rem;
-        min-width: 50px;
+        padding: 0.4rem 1rem; /* ลด padding */
+        font-size: 1rem;      /* ลดขนาดฟอนต์ */
+        min-width: 50px;         /* ลดความกว้าง */
+        border-radius: 8px;      /* ทำให้ปุ่มโค้งน้อยลง */
     }
 
     #profileMenuBtn {
@@ -204,5 +211,12 @@
         width: 16px;
         height: 16px;
     }
+    .logo-icon {
+        display: none;
+    }
+    .logo span {
+        display: none;
+    }
 }
+
 
