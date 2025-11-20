@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Training in Progress - Dough Ball</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="start-training.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/start-training.css">
 </head>
 <body>
+
     <!-- Wave Background -->
     <div class="wave-container">
         <div class="wave wave-light"></div>
@@ -21,50 +24,29 @@
         </svg>
     </button>
 
-    <!-- Header -->
-    <div class="header">
-        <div class="logo">
-            <div class="logo-icon"></div>
-            <span>Dough Ball</span>
-        </div>
-    </div>
+    <!-- Next Button -->
+    <button class="next-button" onclick="finishTraining()">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+    </button>
 
-    <!-- Main Content Container -->
-    <div class="training-content">
-        <!-- 
-            ============================================
-            พื้นที่สำหรับใส่ Backend / Game / Visualization
-            ============================================
-            
-            วางโค้ด backend, canvas, หรือ component ที่ต้องการตรงนี้
-            
-            ตัวอย่าง:
-            - Canvas สำหรับ game
-            - iframe สำหรับ external content
-            - Three.js scene
-            - Unity WebGL build
-            - หรือ component อื่นๆ ที่ต้องการ
-        -->
-        
-        <!-- Placeholder Content (ลบออกเมื่อใส่ backend จริง) -->
-        <div class="placeholder-container">
-            <div class="placeholder-box">
-                <h2>Training Area</h2>
-                <p>วางโค้ด Backend / Visualization ตรงนี้</p>
-                <div class="placeholder-info">
-                    <p>📦 Full-screen container พร้อมใช้งาน</p>
-                    <p>🎮 รองรับ Canvas, iframe, หรือ component อื่นๆ</p>
-                    <p>📱 Responsive design</p>
-                </div>
-                
-                <!-- ปุ่มสำหรับทดสอบ (ลบออกเมื่อใส่ backend จริง) -->
-                <button class="btn btn-primary" onclick="finishTraining()" style="margin-top: 2rem;">
-                    Finish Training (Test Button)
-                </button>
+    <!-- Glass Wrapper / Main Panel -->
+    <div class="training-wrapper">
+        <div class="training-card">
+
+            <!-- ====== พื้นที่วาง Backend / Game / Visualization ====== -->
+            <div class="training-content">
+                <!-- ตัวอย่าง
+                <canvas id="gameCanvas"></canvas>
+                <iframe src="your-game.html"></iframe>
+                -->
             </div>
+            <!-- ======================================================== -->
+
         </div>
     </div>
 
-    <script src="start-training.js"></script>
+    <script src="js/start-training.js" defer></script>
 </body>
 </html>

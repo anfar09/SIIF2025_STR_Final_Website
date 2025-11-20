@@ -162,3 +162,33 @@ window.addEventListener('resize', function() {
         }
     }, 250);
 });
+
+function toggleProfileMenu() {
+    const dropdown = document.getElementById('profileDropdown');
+    dropdown.classList.toggle('active');
+}
+
+function closeProfileMenu() {
+    document.getElementById('profileDropdown').classList.remove('active');
+}
+
+function showSettingModal() {
+    closeProfileMenu();
+    document.getElementById('modalOverlay').classList.add('active');
+    document.getElementById('settingModal').classList.add('active');
+}
+
+function closeSettingModal() {
+    document.getElementById('modalOverlay').classList.remove('active');
+    document.getElementById('settingModal').classList.remove('active');
+}
+
+function toggleSound() {
+    soundEnabled = !soundEnabled;
+    const toggle = document.getElementById('soundToggle');
+    if (soundEnabled) {
+        toggle.classList.add('active');
+    } else {
+        toggle.classList.remove('active');
+    }
+}
