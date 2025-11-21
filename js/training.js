@@ -72,7 +72,7 @@ function updateCardsPerPage() {
         cardsPerPage = 2;
     }
     // Desktop: > 1024px → 3 การ์ด
-    else if (width > 1024) {
+    else if (width > 1180) {
         cardsPerPage = 3;
     }
     // Mobile: < 769px → 1 การ์ด
