@@ -77,7 +77,7 @@ function updateCardsPerPage() {
     }
     // Mobile: < 769px → 1 การ์ด
     else {
-        cardsPerPage = 1;
+        cardsPerPage = 4;
     }
 }
 
