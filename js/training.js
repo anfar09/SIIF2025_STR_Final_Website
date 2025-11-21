@@ -68,7 +68,7 @@ function updateCardsPerPage() {
     const width = window.innerWidth;
     
     // iPad / Tablet: 769px - 1024px → 2 การ์ด
-    if (width >= 769 && width <= 1024) {
+    if (width >= 820 && width <= 1180) {
         cardsPerPage = 2;
     }
     // Desktop: > 1024px → 3 การ์ด
